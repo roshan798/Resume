@@ -1,0 +1,392 @@
+\documentclass{resume}
+
+\usepackage{multicol}
+\usepackage[left=0.4in,top=0.4in,right=0.4in,bottom=0.4in]{geometry}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{Roshan Kumar}
+\address{+91 6205980916 \\ Kolkata, India}
+\address{
+  \href{mailto:roshankumar_2022@outlook.com}{roshankumar\_2022@outlook.com} \(\cdot\)
+  \href{https://www.linkedin.com/in/roshan-kumar7989/}{LinkedIn} \(\cdot\)
+  \href{https://github.com/roshan798}{GitHub} \(\cdot\)
+  \href{https://leetcode.com/Roshan_kumar7989/}{LeetCode} \(\cdot\)
+  \href{https://personal-portfolio-eight-neon.vercel.app}{Portfolio}
+}
+
+% ================================================================
+%  MASTER TOGGLE GUIDE — read before editing
+% ================================================================
+%
+%  TO SWITCH RESUME VERSION, change which SKILLS block and which
+%  PROJECT versions are uncommented. Only ONE skills block and ONE
+%  version of each project should be active at a time.
+%
+%  BACKEND-FOCUSED:
+%    Skills    → uncomment Variant B, comment out A / C / D
+%    Pizza     → uncomment BACKEND version, comment SHORT + FRONTEND
+%    VoiceHub  → comment out entirely
+%    i-Notebook→ comment out entirely
+%    Objective → uncomment BACKEND objective
+%
+%  FRONTEND-FOCUSED:
+%    Skills    → uncomment Variant C, comment out A / B / D
+%    Pizza     → uncomment FRONTEND version, comment BACKEND + SHORT
+%    VoiceHub  → keep LONG version
+%    i-Notebook→ keep LONG version
+%    Objective → uncomment FRONTEND objective
+%
+%  FULL-STACK:
+%    Skills    → uncomment Variant A (default), comment B / C / D
+%    Pizza     → uncomment SHORT version, comment BACKEND + FRONTEND
+%    VoiceHub  → keep SHORT version
+%    i-Notebook→ keep SHORT version
+%    Objective → uncomment FULLSTACK objective
+%
+%  ONE-PAGE (general):
+%    Skills    → Variant A
+%    Pizza     → SHORT version only
+%    VoiceHub  → SHORT version only
+%    i-Notebook→ comment out entirely
+%    Objective → comment out entirely (saves space)
+% ================================================================
+
+\begin{document}
+
+% ================================================================
+%  OBJECTIVE  — uncomment the one matching your target role
+%  Comment this whole section out to save space on 1-page resumes
+% ================================================================
+
+% ---- Default / Full-Stack objective ----
+\begin{rSection}{OBJECTIVE}
+Results-driven Full-Stack Developer with hands-on experience architecting and
+deploying production-grade web applications. Skilled in building scalable
+microservices, event-driven systems, and responsive user interfaces.
+Seeking a role where I can contribute to system design, backend services,
+and end-to-end product delivery.
+\end{rSection}
+
+% ---- Backend-focused objective (uncomment for backend roles) ----
+% \begin{rSection}{OBJECTIVE}
+% Backend Engineer with practical experience designing and deploying
+% microservices-based systems using Node.js, PostgreSQL, MongoDB, and Apache Kafka.
+% Experienced in event-driven architecture, REST API design, JWT authentication,
+% Kubernetes orchestration, and GitOps CI/CD with ArgoCD.
+% Looking to contribute to scalable backend platforms and distributed systems.
+% \end{rSection}
+
+% ---- Frontend-focused objective (uncomment for frontend roles) ----
+% \begin{rSection}{OBJECTIVE}
+% Frontend Developer with strong expertise in React.js, Next.js, and
+% TypeScript, focused on building performant, responsive, and user-friendly
+% interfaces. Experienced in integrating real-time features (Socket.io, WebRTC),
+% payment flows (Stripe), and REST APIs into polished web applications.
+% \end{rSection}
+
+
+% ================================================================
+%  EXPERIENCE
+% ================================================================
+\begin{rSection}{EXPERIENCE}
+
+\textbf{Assistant System Engineer} \hfill Oct 2024 -- Present\\
+Tata Consultancy Services (TCS) \hfill \textit{Kolkata, India}
+\begin{itemize}
+  \itemsep -3pt
+  \item Completed structured onboarding training in \textbf{Java} and
+        \textbf{Spring Boot}, covering REST API development, OOP principles,
+        and enterprise application patterns.
+  % Uncomment below for Java/enterprise roles:
+  % \item Applied Spring Boot concepts to build and test RESTful services
+  %       with SQL-backed persistence layers during training projects.
+  \item \textbf{Tech:} Java \(\cdot\) Spring Boot \(\cdot\) SQL \(\cdot\) JavaScript
+\end{itemize}
+
+\end{rSection}
+
+
+% ================================================================
+%  EDUCATION
+% ================================================================
+\begin{rSection}{Education}
+
+{\bf B.Tech in Computer Science \& Engineering} \hfill {2021 -- 2024}\\
+Vinoba Bhave University, Hazaribagh
+
+\end{rSection}
+
+
+% ================================================================
+%  SKILLS — uncomment exactly ONE variant
+% ================================================================
+\begin{rSection}{SKILLS}
+
+% ---- Variant A: Full-Stack / Default (active) ------------------
+\begin{minipage}{0.45\textwidth}
+  \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+    Languages & Java, C++, JavaScript, TypeScript \\
+    Frontend  & React.js, Next.js, Redux, Tailwind CSS \\
+    Backend   & Node.js, Express.js, Spring Boot \\
+  \end{tabular}
+\end{minipage}%
+\hspace{0.1\textwidth}
+\begin{minipage}{0.45\textwidth}
+  \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+    Databases & PostgreSQL, MongoDB, MySQL \\
+    Infra     & Docker, Kubernetes, AWS S3 \\
+    Tools     & Kafka, Socket.io, Git, Postman \\
+  \end{tabular}
+\end{minipage}
+
+% ---- Variant B: Backend / DevOps (comment A, uncomment this) ---
+% \begin{minipage}{0.45\textwidth}
+%   \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+%     Languages & Java, JavaScript, TypeScript \\
+%     Backend   & Node.js, Express.js, Spring Boot \\
+%     Databases & PostgreSQL, MongoDB, MySQL \\
+%   \end{tabular}
+% \end{minipage}%
+% \hspace{0.1\textwidth}
+% \begin{minipage}{0.45\textwidth}
+%   \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+%     Messaging & Apache Kafka \\
+%     Infra     & Docker, Kubernetes, AWS EKS, ArgoCD \\
+%     Tools     & Git, Postman, NGINX, JWT \\
+%   \end{tabular}
+% \end{minipage}
+
+% ---- Variant C: Frontend (comment A, uncomment this) -----------
+% \begin{minipage}{0.45\textwidth}
+%   \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+%     Languages & JavaScript, TypeScript, HTML, CSS \\
+%     Frontend  & React.js, Next.js, Redux, Tailwind CSS \\
+%     Real-time & Socket.io, WebRTC \\
+%   \end{tabular}
+% \end{minipage}%
+% \hspace{0.1\textwidth}
+% \begin{minipage}{0.45\textwidth}
+%   \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+%     Backend & Node.js, Express.js, REST APIs \\
+%     Tools   & Git, Figma, Postman, Vercel \\
+%   \end{tabular}
+% \end{minipage}
+
+% ---- Variant D: Java / Spring (comment A, uncomment this) ------
+% \begin{minipage}{0.45\textwidth}
+%   \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+%     Languages & Java, JavaScript \\
+%     Backend   & Spring Boot, REST APIs, OOP \\
+%   \end{tabular}
+% \end{minipage}%
+% \hspace{0.1\textwidth}
+% \begin{minipage}{0.45\textwidth}
+%   \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+%     Databases & MySQL, MongoDB \\
+%     Tools     & Git, Postman, Maven \\
+%   \end{tabular}
+% \end{minipage}
+
+\end{rSection}
+
+
+% ================================================================
+%  PROJECTS
+%  Rule: exactly ONE version of each project active at a time.
+%  Rule: comment out any project not relevant to the target role.
+% ================================================================
+\begin{rSection}{PROJECTS}
+\begin{itemize}
+
+
+% ----------------------------------------------------------------
+% PROJECT 1: PIZZA DELIVERY PLATFORM
+% BACKEND roles  → uncomment BACKEND VERSION, comment the others
+% FRONTEND roles → uncomment FRONTEND VERSION, comment the others
+% FULL-STACK / 1-page → uncomment SHORT VERSION, comment others
+% ----------------------------------------------------------------
+
+% ~~~~ BACKEND VERSION — microservices, Kafka, K8s, auth, Stripe ~~~~
+% \item \href{https://github.com/roshan798/pizza-delivery-app}{\textbf{Pizza Delivery Platform}}
+%   \hfill \href{https://mern-pizza-app.cyou}{mern-pizza-app.cyou}\\
+%   Production-grade, multi-tenant pizza ordering platform built across
+%   \textbf{5 independently deployed Node.js microservices}.
+%   \begin{itemize}
+%     \itemsep -3pt
+%     \item Architected \textbf{role-based authentication} (Admin / Manager / Customer)
+%           in a dedicated Auth Service backed by \textbf{PostgreSQL};
+%           implemented JWT access + refresh token rotation with HTTP-only cookies;
+%           downstream services validate tokens locally via shared secret,
+%           removing Auth Service as a synchronous dependency.
+%     \item Built an \textbf{event-driven product price cache} in Order Service by
+%           consuming \textbf{Apache Kafka} events (PRODUCT\_UPDATED, TOPPING\_UPDATED)
+%           published by Catalog Service --- eliminating cross-service HTTP calls at
+%           checkout and ensuring price integrity even during Catalog downtime.
+%     \item Integrated \textbf{Stripe PaymentIntent} API with webhook signature
+%           verification (\texttt{POST /payments/webhook}); order status transitions
+%           to PAID only after cryptographic confirmation, preventing duplicate charges.
+%     \item Deployed on \textbf{AWS EKS} managed by \textbf{ArgoCD v3.3.2} (GitOps);
+%           GitHub Actions builds Docker images on push and updates manifests;
+%           NGINX Ingress handles SSL termination, CORS, and path-based routing;
+%           frontends deployed on \textbf{Vercel}.
+%     \item \textbf{Tech:} Node.js \(\cdot\) PostgreSQL \(\cdot\) MongoDB \(\cdot\)
+%           Apache Kafka \(\cdot\) Stripe \(\cdot\) Socket.io \(\cdot\) AWS S3 \(\cdot\)
+%           Kubernetes \(\cdot\) Docker \(\cdot\) ArgoCD \(\cdot\) NGINX \(\cdot\)
+%           Next.js \(\cdot\) React
+%   \end{itemize}
+%   \href{https://github.com/roshan798/pizza-delivery-app}{github.com/roshan798/pizza-delivery-app}
+
+% shorter version
+  \item \href{https://github.com/roshan798/pizza-delivery-app}{\textbf{Pizza Delivery Platform}}
+  \hfill \href{https://mern-pizza-app.cyou}{mern-pizza-app.cyou}\\\\
+  Multi-tenant pizza ordering platform built with 5 Node.js microservices. Implemented role-based auth, Kafka-driven price caching, Stripe payments, Socket.io real-time updates, and AWS EKS deployment with GitOps; frontends deployed on Vercel.\\
+  \textbf{Tech:} Node.js \(\cdot\) PostgreSQL \(\cdot\) MongoDB \(\cdot\) Kafka \(\cdot\) Stripe \(\cdot\) Socket.io \(\cdot\) Kubernetes \(\cdot\) Docker \(\cdot\) ArgoCD \(\cdot\) Next.js \(\cdot\) React\\\\
+  \href{https://github.com/roshan798/pizza-delivery-app}{github.com/roshan798/pizza-delivery-app}
+
+% ~~~~ FRONTEND VERSION — UI, UX, Stripe checkout, real-time ~~~~
+% \item \href{https://github.com/roshan798/pizza-delivery-app}{\textbf{Pizza Delivery Platform}}
+%   \hfill \href{https://mern-pizza-app.cyou}{mern-pizza-app.cyou}\\
+%   Full-stack, multi-tenant pizza ordering platform with a focus on
+%   intuitive user experience and real-time interactivity.
+%   \begin{itemize}
+%     \itemsep -3pt
+%     \item Built the \textbf{customer storefront} in \textbf{Next.js 14}
+%           (App Router) with dynamic pizza customization (size, crust, toppings),
+%           an interactive cart with live price calculation, and a
+%           \textbf{Stripe-hosted checkout} redirect for card payments.
+%     \item Developed the \textbf{Admin Dashboard} in \textbf{React + Vite} for
+%           tenant managers --- real-time order notification panel (new orders
+%           appear without refresh via \textbf{Socket.io}), product/topping CRUD,
+%           and order status management.
+%     \item Implemented a live \textbf{order tracking UI} on the client using
+%           Socket.io: customers see status transitions
+%           (Confirmed $\to$ Prepared $\to$ On Route $\to$ Delivered)
+%           animate in real time without polling.
+%     \item Designed fully \textbf{responsive layouts} with Tailwind CSS;
+%           deployed both frontends on \textbf{Vercel} with automatic preview
+%           deployments on pull requests.
+%     \item \textbf{Tech:} Next.js \(\cdot\) React \(\cdot\) TypeScript \(\cdot\)
+%           Tailwind CSS \(\cdot\) Socket.io \(\cdot\) Stripe.js \(\cdot\) Vercel
+%   \end{itemize}
+%   \href{https://github.com/roshan798/pizza-delivery-app}{github.com/roshan798/pizza-delivery-app}
+
+% ~~~~ SHORT VERSION — full-stack / 1-page resumes ~~~~
+% \item \href{https://github.com/roshan798/pizza-delivery-app}{\textbf{Pizza Delivery Platform}}
+%   \hfill \href{https://mern-pizza-app.cyou}{mern-pizza-app.cyou}\\
+%   Multi-tenant pizza ordering platform with 5 Node.js microservices.
+%   Order Service maintains a \textbf{Kafka-sourced product price cache}
+%   to validate checkout prices without cross-service HTTP calls.
+%   Integrated \textbf{Stripe} payments with webhook verification and
+%   \textbf{Socket.io} for real-time order tracking across customer and admin UIs.
+%   Deployed on \textbf{AWS EKS} via \textbf{ArgoCD} GitOps; frontends on Vercel.\\
+%   \textbf{Tech:} Node.js \(\cdot\) PostgreSQL \(\cdot\) MongoDB \(\cdot\) Kafka
+%   \(\cdot\) Kubernetes \(\cdot\) Docker \(\cdot\) Stripe \(\cdot\)
+%   Next.js \(\cdot\) React\\
+%   \href{https://github.com/roshan798/pizza-delivery-app}{github.com/roshan798/pizza-delivery-app}
+
+
+% ----------------------------------------------------------------
+% PROJECT 2: VOICEHUB
+% Keep for: frontend, WebRTC, real-time, full-stack roles
+% Comment out for: backend-only / Java / 1-page resumes
+% ----------------------------------------------------------------
+
+% ~~~~ LONG VERSION ~~~~
+\item \href{https://github.com/roshan798/voicehub.me}{\textbf{VoiceHub}}
+  \hfill Real-time Group Voice Calling App\\
+  Designed and built a browser-based group voice calling platform supporting
+  multi-user rooms with peer-to-peer audio.
+  \begin{itemize}
+    \itemsep -3pt
+    \item Implemented \textbf{WebRTC} mesh networking for low-latency,
+          peer-to-peer audio streaming; used \textbf{Socket.IO} for signalling,
+          room lifecycle events, and user presence updates.
+    \item Built a \textbf{React} SPA frontend with dynamic room management UI
+          and a \textbf{Node.js + Express} REST backend with \textbf{MongoDB}
+          for user and room persistence.
+  \end{itemize}
+  \href{https://github.com/roshan798/voicehub.me}{github.com/roshan798/voicehub.me}
+
+% ~~~~ SHORT VERSION ~~~~
+% \item \href{https://github.com/roshan798/voicehub.me}{\textbf{VoiceHub}}
+%   --- Real-time Group Voice Calling App\\
+%   Browser-based group voice calling app using \textbf{WebRTC} for
+%   peer-to-peer audio and \textbf{Socket.IO} for signalling and room management;
+%   built with React, Node.js, and MongoDB.\\
+%   \href{https://github.com/roshan798/voicehub.me}{github.com/roshan798/voicehub.me}
+
+
+% ----------------------------------------------------------------
+% PROJECT 3: i-NOTEBOOK
+% Keep for: full-stack / frontend / CRUD roles
+% Comment out for: backend-only / 1-page resumes
+% ----------------------------------------------------------------
+
+% ~~~~ LONG VERSION ~~~~
+% \item \href{https://i-notebook-app-nine.vercel.app/}{\textbf{i-Notebook App}}
+%   \hfill Full-Stack Note Management App\\
+%   Full-stack note-taking application with complete CRUD functionality,
+%   JWT-based authentication, and a responsive UI.
+%   \begin{itemize}
+%     \itemsep -3pt
+%     \item Built \textbf{React} frontend with context-based state management
+%           and \textbf{Tailwind CSS} for responsive layout;
+%           \textbf{Node.js + Express} REST API with \textbf{MySQL} persistence.
+%     \item Implemented secure \textbf{JWT authentication} with protected routes
+%           on both frontend and backend.
+%   \end{itemize}
+%   \href{https://github.com/roshan798/i-notebook-app}{github.com/roshan798/i-notebook}
+
+% ~~~~ SHORT VERSION ~~~~
+% \item \href{https://i-notebook-app-nine.vercel.app/}{\textbf{i-Notebook App}}
+%   --- Full-Stack Note Management\\
+%   CRUD note-taking app with JWT authentication built using React,
+%   Node.js, Express, and MySQL; responsive UI with Tailwind CSS.\\
+%   \href{https://github.com/roshan798/i-notebook-app}{github.com/roshan798/i-notebook}
+
+
+\end{itemize}
+\end{rSection}
+
+
+% ================================================================
+%  ACHIEVEMENTS
+% ================================================================
+\begin{rSection}{Achievements}
+\begin{itemize}
+  \item Achieved \textbf{1750+ contest rating} on LeetCode; participated in
+        \textbf{56+ contests} and ranked in the \textbf{global top 1300}
+        in Weekly Contest 376.
+  \item Solved \textbf{600+ problems} across
+        \href{https://leetcode.com/u/Roshan_kumar7989/}{LeetCode},
+        \href{https://auth.geeksforgeeks.org/user/roshan_sahu/}{GeeksForGeeks}, and
+        \href{https://www.hackerrank.com/rsahu7989}{HackerRank}.
+  \item Earned \textbf{6-star Gold} badge in HackerRank Problem Solving.
+\end{itemize}
+\end{rSection}
+
+
+% ================================================================
+%  CERTIFICATES
+% ================================================================
+\begin{rSection}{Certificates}
+\begin{multicols}{3}
+\begin{itemize}
+  \item \href{https://www.hackerrank.com/certificates/73bb80c83be4}{HackerRank Problem Solving}
+  \item \href{https://www.freecodecamp.org/certification/Roshan_kumar7989/responsive-web-design}{freeCodeCamp Responsive Web Design}
+  \item \href{https://tree-nation.com/certificate/6525e97fbca2d}{Hacktoberfest Contributor}
+\end{itemize}
+\end{multicols}
+\end{rSection}
+
+
+% ================================================================
+%  HOBBIES — comment out to save space on 1-page resumes
+% ================================================================
+% \begin{rSection}{Hobbies \& Interests}
+% Competitive programming, reading engineering blogs, cricket, and chess.
+% \end{rSection}
+
+
+\end{document}

@@ -1,0 +1,174 @@
+\documentclass{resume}
+
+\usepackage{multicol}
+\usepackage[left=0.4in,top=0.4in,right=0.4in,bottom=0.4in]{geometry}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{Roshan Kumar}
+\address{+91 6205980916 \\ Kolkata, India}
+\address{
+  \href{mailto:roshankumar_2022@outlook.com}{roshankumar\_2022@outlook.com} \(\cdot\)
+  \href{https://www.linkedin.com/in/roshan-kumar7989/}{LinkedIn} \(\cdot\)
+  \href{https://github.com/roshan798}{GitHub} \(\cdot\)
+  \href{https://leetcode.com/Roshan_kumar7989/}{LeetCode} \(\cdot\)
+  \href{https://personal-portfolio-eight-neon.vercel.app}{Portfolio}
+}
+
+\begin{document}
+
+% ================================================================
+%  OBJECTIVE
+% ================================================================
+\begin{rSection}{OBJECTIVE}
+Full-Stack Developer with end-to-end experience architecting, building,
+and deploying production-grade web applications. Proficient across the
+entire stack --- from React and Next.js frontends to Node.js microservices,
+event-driven systems with Kafka, and Kubernetes deployments.
+Passionate about clean system design, developer experience, and shipping
+reliable software.
+\end{rSection}
+
+
+% ================================================================
+%  EXPERIENCE
+% ================================================================
+\begin{rSection}{EXPERIENCE}
+
+\textbf{Assistant System Engineer} \hfill Oct 2024 -- Present\\
+Tata Consultancy Services (TCS) \hfill \textit{Kolkata, India}
+\begin{itemize}
+  \itemsep -3pt
+  \item Completed onboarding training in \textbf{Java} and \textbf{Spring Boot},
+        building REST APIs with SQL-backed persistence layers.
+  \item \textbf{Tech:} Java \(\cdot\) Spring Boot \(\cdot\) SQL \(\cdot\) JavaScript
+\end{itemize}
+
+\end{rSection}
+
+
+% ================================================================
+%  EDUCATION
+% ================================================================
+\begin{rSection}{Education}
+
+{\bf B.Tech in Computer Science \& Engineering} \hfill {2021 -- 2024}\\
+Vinoba Bhave University, Hazaribagh
+
+\end{rSection}
+
+
+% ================================================================
+%  SKILLS
+% ================================================================
+\begin{rSection}{SKILLS}
+
+\begin{minipage}{0.45\textwidth}
+  \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+    Languages & Java, C++, JavaScript, TypeScript \\
+    Frontend  & React.js, Next.js, Redux, Tailwind CSS \\
+    Backend   & Node.js, Express.js, Spring Boot \\
+  \end{tabular}
+\end{minipage}%
+\hspace{0.1\textwidth}
+\begin{minipage}{0.45\textwidth}
+  \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+    Databases & PostgreSQL, MongoDB, MySQL \\
+    Infra     & Docker, Kubernetes, AWS S3 \\
+    Tools     & Kafka, Socket.io, Git, Postman \\
+  \end{tabular}
+\end{minipage}
+
+\end{rSection}
+
+
+% ================================================================
+%  PROJECTS
+% ================================================================
+\begin{rSection}{PROJECTS}
+\begin{itemize}
+
+% ---- Pizza: Full-stack balanced version ------------------------
+\item \href{https://github.com/roshan798/pizza-delivery-app}{\textbf{Pizza Delivery Platform}}
+  \hfill \href{https://mern-pizza-app.cyou}{mern-pizza-app.cyou}\\
+  End-to-end, multi-tenant pizza ordering platform spanning microservices
+  backend and polished React frontends --- built and deployed to production.
+  \begin{itemize}
+    \itemsep -3pt
+    \item \textbf{Backend:} 5 independently deployed \textbf{Node.js} microservices.
+          Auth Service uses \textbf{PostgreSQL} with JWT access + refresh token
+          rotation and RBAC (Admin / Manager / Customer); services validate tokens
+          locally, removing Auth as a synchronous dependency.
+    \item \textbf{Event-driven:} \textbf{Kafka} decouples Catalog from Order
+          Service --- catalog mutation events keep Order's local price cache
+          in sync, so checkout validates prices without cross-service HTTP calls.
+          A single ORDER\_PLACED event fans out to both WebSocket and Notification
+          services independently.
+    \item \textbf{Payments \& real-time:} \textbf{Stripe} PaymentIntent with
+          webhook verification for card orders; \textbf{Socket.io} pushes live
+          status updates (Confirmed $\to$ Delivered) to both customer and
+          manager UIs without polling.
+    \item \textbf{Frontend:} Customer storefront in \textbf{Next.js 14}
+          (App Router, SSR) with dynamic pizza customization and Stripe checkout;
+          Admin Dashboard in \textbf{React + Vite} with real-time order
+          notification panel, product/topping CRUD, and status management.
+    \item \textbf{Infra:} Backend on \textbf{AWS EKS}; \textbf{ArgoCD} GitOps
+          with GitHub Actions; NGINX Ingress for SSL and routing;
+          frontends on \textbf{Vercel}.
+    \item \textbf{Tech:} Node.js \(\cdot\) PostgreSQL \(\cdot\) MongoDB \(\cdot\)
+          Kafka \(\cdot\) Stripe \(\cdot\) Socket.io \(\cdot\) AWS S3 \(\cdot\)
+          Kubernetes \(\cdot\) Docker \(\cdot\) ArgoCD \(\cdot\) Next.js \(\cdot\) React
+  \end{itemize}
+  \href{https://github.com/roshan798/pizza-delivery-app}{github.com/roshan798/pizza-delivery-app}
+
+% ---- VoiceHub: Short version -----------------------------------
+\item \href{https://github.com/roshan798/voicehub.me}{\textbf{VoiceHub}}
+  --- Real-time Group Voice Calling App\\
+  Browser-based group voice calling app using \textbf{WebRTC} for
+  peer-to-peer audio streaming and \textbf{Socket.IO} for signalling
+  and room management; \textbf{React} SPA frontend, \textbf{Node.js + Express}
+  backend with \textbf{MongoDB}.\\
+  \href{https://github.com/roshan798/voicehub.me}{github.com/roshan798/voicehub.me}
+
+% ---- i-Notebook: Short version ---------------------------------
+\item \href{https://i-notebook-app-nine.vercel.app/}{\textbf{i-Notebook App}}
+  --- Full-Stack Note Management\\
+  Responsive note-taking SPA with JWT authentication and CRUD functionality
+  using React, Tailwind CSS, Node.js, Express, and MySQL.\\
+  \href{https://github.com/roshan798/i-notebook-app}{github.com/roshan798/i-notebook}
+
+\end{itemize}
+\end{rSection}
+
+
+% ================================================================
+%  ACHIEVEMENTS
+% ================================================================
+\begin{rSection}{Achievements}
+\begin{itemize}
+  \item Achieved \textbf{1750+ contest rating} on LeetCode; participated in
+        \textbf{56+ contests} and ranked in the \textbf{global top 1300}
+        in Weekly Contest 376.
+  \item Solved \textbf{600+ problems} across
+        \href{https://leetcode.com/u/Roshan_kumar7989/}{LeetCode},
+        \href{https://auth.geeksforgeeks.org/user/roshan_sahu/}{GeeksForGeeks}, and
+        \href{https://www.hackerrank.com/rsahu7989}{HackerRank}.
+  \item Earned \textbf{6-star Gold} badge in HackerRank Problem Solving.
+\end{itemize}
+\end{rSection}
+
+
+% ================================================================
+%  CERTIFICATES
+% ================================================================
+\begin{rSection}{Certificates}
+\begin{multicols}{3}
+\begin{itemize}
+  \item \href{https://www.hackerrank.com/certificates/73bb80c83be4}{HackerRank Problem Solving}
+  \item \href{https://www.freecodecamp.org/certification/Roshan_kumar7989/responsive-web-design}{freeCodeCamp Responsive Web Design}
+  \item \href{https://tree-nation.com/certificate/6525e97fbca2d}{Hacktoberfest Contributor}
+\end{itemize}
+\end{multicols}
+\end{rSection}
+
+\end{document}
