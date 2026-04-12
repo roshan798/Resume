@@ -208,41 +208,41 @@ Vinoba Bhave University, Hazaribagh
 % ----------------------------------------------------------------
 
 % ~~~~ BACKEND VERSION — microservices, Kafka, K8s, auth, Stripe ~~~~
-% \item \href{https://github.com/roshan798/pizza-delivery-app}{\textbf{Pizza Delivery Platform}}
-%   \hfill \href{https://mern-pizza-app.cyou}{mern-pizza-app.cyou}\\
-%   Production-grade, multi-tenant pizza ordering platform built across
-%   \textbf{5 independently deployed Node.js microservices}.
-%   \begin{itemize}
-%     \itemsep -3pt
-%     \item Architected \textbf{role-based authentication} (Admin / Manager / Customer)
-%           in a dedicated Auth Service backed by \textbf{PostgreSQL};
-%           implemented JWT access + refresh token rotation with HTTP-only cookies;
-%           downstream services validate tokens locally via shared secret,
-%           removing Auth Service as a synchronous dependency.
-%     \item Built an \textbf{event-driven product price cache} in Order Service by
-%           consuming \textbf{Apache Kafka} events (PRODUCT\_UPDATED, TOPPING\_UPDATED)
-%           published by Catalog Service --- eliminating cross-service HTTP calls at
-%           checkout and ensuring price integrity even during Catalog downtime.
-%     \item Integrated \textbf{Stripe PaymentIntent} API with webhook signature
-%           verification (\texttt{POST /payments/webhook}); order status transitions
-%           to PAID only after cryptographic confirmation, preventing duplicate charges.
-%     \item Deployed on \textbf{AWS EKS} managed by \textbf{ArgoCD v3.3.2} (GitOps);
-%           GitHub Actions builds Docker images on push and updates manifests;
-%           NGINX Ingress handles SSL termination, CORS, and path-based routing;
-%           frontends deployed on \textbf{Vercel}.
-%     \item \textbf{Tech:} Node.js \(\cdot\) PostgreSQL \(\cdot\) MongoDB \(\cdot\)
-%           Apache Kafka \(\cdot\) Stripe \(\cdot\) Socket.io \(\cdot\) AWS S3 \(\cdot\)
-%           Kubernetes \(\cdot\) Docker \(\cdot\) ArgoCD \(\cdot\) NGINX \(\cdot\)
-%           Next.js \(\cdot\) React
-%   \end{itemize}
-%   \href{https://github.com/roshan798/pizza-delivery-app}{github.com/roshan798/pizza-delivery-app}
+\item \href{https://github.com/roshan798/pizza-delivery-app}{\textbf{Pizza Delivery Platform}}
+  \hfill \href{https://mern-pizza-app.cyou}{mern-pizza-app.cyou}\\
+  Production-grade, multi-tenant pizza ordering platform built across
+  \textbf{5 independently deployed Node.js microservices}.
+  \begin{itemize}
+    \itemsep -3pt
+    \item Architected \textbf{role-based authentication} (Admin / Manager / Customer)
+          in a dedicated Auth Service backed by \textbf{PostgreSQL};
+          implemented JWT access + refresh token rotation with HTTP-only cookies;
+          downstream services validate tokens locally via shared secret,
+          removing Auth Service as a synchronous dependency.
+    \item Built an \textbf{event-driven product price cache} in Order Service by
+          consuming \textbf{Apache Kafka} events (PRODUCT\_UPDATED, TOPPING\_UPDATED)
+          published by Catalog Service --- eliminating cross-service HTTP calls at
+          checkout and ensuring price integrity even during Catalog downtime.
+    \item Integrated \textbf{Stripe PaymentIntent} API with webhook signature
+          verification (\texttt{POST /payments/webhook}); order status transitions
+          to PAID only after cryptographic confirmation, preventing duplicate charges.
+    \item Deployed on \textbf{AWS EKS} managed by \textbf{ArgoCD v3.3.2} (GitOps);
+          GitHub Actions builds Docker images on push and updates manifests;
+          NGINX Ingress handles SSL termination, CORS, and path-based routing;
+          frontends deployed on \textbf{Vercel}.
+    \item \textbf{Tech:} Node.js \(\cdot\) PostgreSQL \(\cdot\) MongoDB \(\cdot\)
+          Apache Kafka \(\cdot\) Stripe \(\cdot\) Socket.io \(\cdot\) AWS S3 \(\cdot\)
+          Kubernetes \(\cdot\) Docker \(\cdot\) ArgoCD \(\cdot\) NGINX \(\cdot\)
+          Next.js \(\cdot\) React
+  \end{itemize}
+  \href{https://github.com/roshan798/pizza-delivery-app}{github.com/roshan798/pizza-delivery-app}
 
 % shorter version
-  \item \href{https://github.com/roshan798/pizza-delivery-app}{\textbf{Pizza Delivery Platform}}
-  \hfill \href{https://mern-pizza-app.cyou}{mern-pizza-app.cyou}\\\\
-  Multi-tenant pizza ordering platform built with 5 Node.js microservices. Implemented role-based auth, Kafka-driven price caching, Stripe payments, Socket.io real-time updates, and AWS EKS deployment with GitOps; frontends deployed on Vercel.\\
-  \textbf{Tech:} Node.js \(\cdot\) PostgreSQL \(\cdot\) MongoDB \(\cdot\) Kafka \(\cdot\) Stripe \(\cdot\) Socket.io \(\cdot\) Kubernetes \(\cdot\) Docker \(\cdot\) ArgoCD \(\cdot\) Next.js \(\cdot\) React\\\\
-  \href{https://github.com/roshan798/pizza-delivery-app}{github.com/roshan798/pizza-delivery-app}
+  % \item \href{https://github.com/roshan798/pizza-delivery-app}{\textbf{Pizza Delivery Platform}}
+  % \hfill \href{https://mern-pizza-app.cyou}{mern-pizza-app.cyou}\\\\
+  % Multi-tenant pizza ordering platform built with 5 Node.js microservices. Implemented role-based auth, Kafka-driven price caching, Stripe payments, Socket.io real-time updates, and AWS EKS deployment with GitOps; frontends deployed on Vercel.\\
+  % \textbf{Tech:} Node.js \(\cdot\) PostgreSQL \(\cdot\) MongoDB \(\cdot\) Kafka \(\cdot\) Stripe \(\cdot\) Socket.io \(\cdot\) Kubernetes \(\cdot\) Docker \(\cdot\) ArgoCD \(\cdot\) Next.js \(\cdot\) React\\\\
+  % \href{https://github.com/roshan798/pizza-delivery-app}{github.com/roshan798/pizza-delivery-app}
 
 % ~~~~ FRONTEND VERSION — UI, UX, Stripe checkout, real-time ~~~~
 % \item \href{https://github.com/roshan798/pizza-delivery-app}{\textbf{Pizza Delivery Platform}}
