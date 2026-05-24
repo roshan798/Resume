@@ -1,0 +1,114 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage{multicol}
+\usepackage[left=0.4 in,top=0.3in,right=0.4 in,bottom=0.3in]{geometry}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{Roshan Kumar}
+\address{+91 6205980916 \\ Kolkata, India}
+\address{
+  \href{mailto:roshankumar_2022@outlook.com}{roshankumar\_2022@outlook.com} \\
+  \href{https://www.linkedin.com/in/roshan-kumar7989/}{LinkedIn} \\
+  \href{https://github.com/roshan798}{GitHub} \\
+  \href{https://leetcode.com/Roshan_kumar7989/}{Leetcode} \\
+  \href{https://personal-portfolio-eight-neon.vercel.app}{Portfolio}
+}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%   PROFESSIONAL SUMMARY
+%----------------------------------------------------------------------------------------
+\begin{rSection}{PROFESSIONAL SUMMARY}
+    \vspace{-0.5em}
+    Software Engineer with production experience in enterprise Java/Spring Boot microservices for high-volume BFSI systems. Optimizing PL/SQL queries (30--40\% gains), implementing Business Rules Engines across 17+ financial products, and building event-driven platforms with Kafka and Kubernetes. Full-stack proficiency in React/Next.js.
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   PROFESSIONAL EXPERIENCE
+%----------------------------------------------------------------------------------------
+\begin{rSection}{PROFESSIONAL EXPERIENCE}
+
+    \textbf{Systems Engineer (Java Developer)} \hfill Oct 2024 -- Present\\
+    Tata Consultancy Services \hfill \textit{Kolkata, India}
+    \begin{itemize}
+        \itemsep -3pt
+        \item Engineered production-grade backend microservices for a large-scale insurance platform processing 100K+ daily policy transactions across multiple lines of business.
+        \item Implemented and configured complex business logic within a centralized Business Rules Engine (BRE) across 17 financial products, automating dynamic premium calculations and underwriting validations that reduced policy change turnaround times by 60\%.
+        \item Designed robust RESTful APIs for policy lifecycle operations while optimizing complex PL/SQL stored procedures, improving query execution time by 30--40\% and reducing downstream errors by 25\%.
+        \item \textbf{Tech Stack:} Java 11/17 $\cdot$ Spring Boot $\cdot$ Spring Data JPA $\cdot$ PostgreSQL $\cdot$ PL/SQL $\cdot$ REST APIs $\cdot$ Maven $\cdot$ Git
+    \end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{EDUCATION}
+
+    {\bf Bachelor of Technology in Computer Science \& Engineering} \hfill {2021 -- 2024}\\
+    Vinoba Bhave University, Hazaribagh
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   TECHNICAL SKILLS
+%----------------------------------------------------------------------------------------
+% \begin{rSection}{TECHNICAL SKILLS}
+%     \vspace{-0.5em}
+
+%     \textbf{Languages:} Java, JavaScript, TypeScript, C++, SQL, PL/SQL \\[0.25em]
+%     \textbf{Backend:} Spring Boot, Spring Data JPA, Node.js, Express.js, Hibernate \\[0.25em]
+%     \textbf{Frontend:} React.js, Next.js, Redux, Tailwind CSS \\[0.25em]
+%     \textbf{Databases:} PostgreSQL, MongoDB, MySQL \\[0.25em]
+%     \textbf{Cloud \& DevOps:} AWS (EKS, S3), Docker, Kubernetes, ArgoCD, GitHub Actions \\[0.25em]
+%     \textbf{Messaging:} Apache Kafka, Socket.io \\[0.25em]
+%     \textbf{Tools:} Git, Postman, Maven, NGINX, Stripe API, WebRTC
+
+% \end{rSection}
+
+\begin{rSection}{TECHNICAL SKILLS}
+\begin{multicols}{2}
+    \textbf{Languages:} Java, JavaScript, TypeScript, C++ \\
+    \textbf{Backend:} Spring Boot, Node.js, Express.js \\
+    \textbf{Frontend:} React.js, Next.js, Redux, Tailwind CSS \\
+    \textbf{Databases:} PostgreSQL, MongoDB, MySQL\\
+    \textbf{Messaging:} Apache Kafka, Socket.io \\
+    \textbf{Cloud/DevOps:} AWS, Docker, Kubernetes, ArgoCD, GitHub Actions  \\
+    \textbf{Tools:} Git, Postman, NGINX, Stripe API, WebRTC
+\end{multicols}
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%   PROJECTS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{PROJECTS}
+    \vspace{-0.4em}
+    \begin{itemize}
+
+        \item \href{https://github.com/roshan798/pizza-delivery-app}{\textbf{Pizza Delivery Platform --- Microservices \& Event-Driven Architecture}}\\
+              Production-grade, multi-tenant ordering platform featuring 5 Node.js microservices communicating via Apache Kafka, a PostgreSQL-backed RBAC Auth Service with JWT rotation, and an event-driven price cache yielding a 70\% latency reduction. Integrated Stripe webhook verification and Socket.io tracking; deployed on AWS EKS via GitHub Actions and ArgoCD GitOps pipelines.\\
+              \textbf{Tech:} Node.js $\cdot$ PostgreSQL $\cdot$ MongoDB $\cdot$ Kafka $\cdot$ Kubernetes $\cdot$ Docker $\cdot$ AWS $\cdot$ Next.js\\
+              \textit{Source:} \href{https://github.com/roshan798/pizza-delivery-app}{github.com/roshan798/pizza-delivery-app}
+
+        \item \href{https://github.com/roshan798/voicehub.me}{\textbf{VoiceHub --- Real-Time Group Voice Calling Application}}\\
+              WebRTC-based group voice calling platform with React frontend, Node.js/Express signaling server, and MongoDB. Implemented peer-to-peer audio streaming with Socket.io for SDP exchange and ICE candidate relay.\\
+              \textbf{Tech:} React $\cdot$ Node.js $\cdot$ MongoDB $\cdot$ WebRTC $\cdot$ Socket.io \hspace{1em}
+              \textit{Source:} \href{https://github.com/roshan798/voicehub.me}{github.com/roshan798/voicehub.me}
+
+    \end{itemize}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   ACHIEVEMENTS \& CERTIFICATIONS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{ACHIEVEMENTS \& CERTIFICATIONS}
+    \vspace{-0.4em}
+    \begin{itemize}
+        \itemsep -2pt
+        \item \textbf{Competitive Programming:} LeetCode 1750+ rating (56+ contests, top 1300 globally in Contest 376), 600+ problems solved across platforms, and a HackerRank 6-Star tier in algorithmic problem-solving.
+        \item \textbf{Certifications:} \href{https://www.hackerrank.com/certificates/73bb80c83be4}{HackerRank Problem Solving} $\cdot$ \href{https://www.freecodecamp.org/certification/Roshan_kumar7989/responsive-web-design}{freeCodeCamp Responsive Web Design} $\cdot$ \href{https://tree-nation.com/certificate/6525e97fbca2d}{Hacktoberfest Contributor}
+    \end{itemize}
+\end{rSection}
+
+\end{document}

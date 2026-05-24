@@ -1,0 +1,155 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage{multicol}
+\usepackage[left=0.4 in,top=0.35in,right=0.4 in,bottom=0.35in]{geometry}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{Roshan Kumar}
+\address{+91 6205980916 \\ Kolkata, India}
+\address{
+  \href{mailto:roshankumar_2022@outlook.com}{roshankumar\_2022@outlook.com} \\
+  \href{https://www.linkedin.com/in/roshan-kumar7989/}{LinkedIn} \\
+  \href{https://github.com/roshan798}{GitHub} \\
+  \href{https://leetcode.com/Roshan_kumar7989/}{Leetcode} \\
+  \href{https://personal-portfolio-eight-neon.vercel.app}{Portfolio}
+}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL SUMMARY
+%----------------------------------------------------------------------------------------
+\begin{rSection}{PROFESSIONAL SUMMARY}
+    \vspace{-0.5em}
+    Software Engineer with production experience in enterprise Java/Spring Boot microservices for high-volume BFSI systems. Proven track record optimizing PL/SQL queries, architecting Business Rules Engines across 17+ financial products, and building event-driven platforms with Kafka and Kubernetes. Full-stack proficiency in React/Next.js with strong competitive programming foundation.
+\end{rSection}
+
+%%original
+% \begin{rSection}{PROFESSIONAL SUMMARY}
+% \vspace{-0.5em}
+% Software Engineer with production experience in enterprise Java/Spring Boot microservices for high-volume BFSI systems. Proven track record optimizing PL/SQL queries (30--40\% performance gains), architecting Business Rules Engines across 17+ financial products, and building event-driven platforms with Kafka and Kubernetes. Full-stack proficiency in React/Next.js with strong competitive programming foundation (LeetCode 1750+ rating, 600+ problems solved).
+% \end{rSection}
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE
+%----------------------------------------------------------------------------------------
+\begin{rSection}{PROFESSIONAL EXPERIENCE}
+
+    \textbf{Systems Engineer (Java Developer)} \hfill Oct 2024 -- Present\\
+    Tata Consultancy Services \hfill \textit{Kolkata, India}
+    \begin{itemize}
+        \itemsep -3pt
+        \item Engineered production-grade backend microservices for a large-scale insurance
+              platform processing 100K+ daily policy transactions across multiple lines of
+              business.
+        \item Implemented and configured complex business logic within a centralized Business
+              Rules Engine (BRE) across 17 financial products, automating dynamic premium
+              calculations and underwriting validations that reduced policy change turnaround
+              times by 60%.
+        \item Refactored and optimized complex PL/SQL stored procedures handling multi-stage
+              endorsement workflows, improving query execution time by 30--40\% and
+              eliminating bottlenecks in high-concurrency environments.
+        \item Designed and implemented RESTful APIs for policy lifecycle operations (quote,
+              bind, endorse, renew) with robust validation layers, reducing downstream errors
+              by 25\%.
+        \item Collaborated with cross-functional teams (QA, DevOps, Business Analysts) in
+              Agile sprints to translate ambiguous business requirements into scalable,
+              maintainable Java/Spring Boot solutions.
+        \item \textbf{Tech Stack:} Java 11/17 $\cdot$ Spring Boot $\cdot$ Spring Data JPA $\cdot$ PostgreSQL $\cdot$ PL/SQL $\cdot$ REST APIs $\cdot$ Maven $\cdot$ Git $\cdot$ Postman
+    \end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{EDUCATION}
+
+    {\bf Bachelor of Technology in Computer Science \& Engineering} \hfill {2021 -- 2024}\\
+    Vinoba Bhave University, Hazaribagh
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS (ATS-Optimized Linear Layout)
+%----------------------------------------------------------------------------------------
+\begin{rSection}{TECHNICAL SKILLS}
+    \vspace{-0.5em}
+
+    \textbf{Languages:} Java, JavaScript, TypeScript, C++, SQL (PostgreSQL, MySQL), PL/SQL \\[0.3em]
+    \textbf{Backend \& Frameworks:} Spring Boot, Spring Data JPA, Node.js, Express.js, Hibernate \\[0.3em]
+    \textbf{Frontend:} React.js, Next.js, Redux, HTML5, CSS3, Tailwind CSS \\[0.3em]
+    \textbf{Databases:} PostgreSQL, MongoDB, MySQL \\[0.3em]
+    \textbf{Messaging \& Event Streaming:} Apache Kafka, Socket.io \\[0.3em]
+    \textbf{Cloud \& Infrastructure:} AWS (EKS, S3), Docker, Kubernetes, NGINX Ingress \\[0.3em]
+    \textbf{DevOps \& CI/CD:} GitHub Actions, ArgoCD, GitOps, Maven \\[0.3em]
+    \textbf{Tools:} Git, Postman, Stripe API, WebRTC
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{PROJECTS}
+    \vspace{-0.3em}
+    \begin{itemize}
+
+        \item \href{https://github.com/roshan798/pizza-delivery-app}{\textbf{Pizza Delivery Platform --- Microservices \& Event-Driven Architecture}}\\
+              Production-grade, multi-tenant ordering platform with 5 independently deployed Node.js microservices communicating via \textbf{Apache Kafka}.
+              \begin{itemize}
+                  \itemsep -3pt
+                  \item \textbf{Auth Service:} PostgreSQL-backed RBAC (Admin/Manager/Customer) with JWT access + refresh token rotation; stateless validation across services eliminates single point of failure.
+                  \item \textbf{Event-Driven Caching:} Order Service maintains real-time product price cache by consuming Kafka events from Catalog Service --- checkout validation happens locally without synchronous HTTP calls, reducing latency by 70\%.
+                  \item \textbf{Payment Integration:} Stripe PaymentIntent flow with webhook signature verification; Socket.io broadcasts real-time order status updates to customers and managers.
+                  \item \textbf{Cloud-Native Deployment:} Backend on \textbf{AWS EKS (Kubernetes)} with NGINX Ingress; GitOps CI/CD via GitHub Actions (Docker $\to$ DockerHub) + \textbf{ArgoCD} for automated rollouts; Next.js/React frontends on Vercel.
+                  \item \textbf{Tech Stack:} Node.js $\cdot$ PostgreSQL $\cdot$ MongoDB $\cdot$ Kafka $\cdot$ Socket.io $\cdot$ Stripe $\cdot$ Kubernetes $\cdot$ Docker $\cdot$ ArgoCD $\cdot$ AWS S3 $\cdot$ Next.js $\cdot$ React
+              \end{itemize}
+              \textit{Source:} \href{https://github.com/roshan798/pizza-delivery-app}{github.com/roshan798/pizza-delivery-app}
+
+        \item \href{https://github.com/roshan798/voicehub.me}{\textbf{VoiceHub --- Real-Time Group Voice Calling Application}}\\
+              WebRTC-based group voice calling platform enabling multi-participant audio rooms with peer-to-peer connectivity.
+              \begin{itemize}
+                  \itemsep -3pt
+                  \item Built full-stack application using \textbf{React} (frontend),
+                        \textbf{Node.js/Express} (signaling server), and \textbf{MongoDB} for session
+                        persistence.
+                  \item Implemented \textbf{WebRTC} peer connections with \textbf{Socket.io} for
+                        real-time signaling (offer/answer SDP exchange, ICE candidate relay).
+                  \item Designed RESTful APIs for room management, user authentication, and call
+                        history tracking.
+                  \item \textbf{Tech Stack:} React $\cdot$ Node.js $\cdot$ Express $\cdot$ MongoDB $\cdot$ WebRTC $\cdot$ Socket.io
+              \end{itemize}
+              \textit{Source:} \href{https://github.com/roshan798/voicehub.me}{github.com/roshan798/voicehub.me}
+
+    \end{itemize}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{ACHIEVEMENTS}
+    \vspace{-0.3em}
+    \begin{itemize}
+        \itemsep -2pt
+        \item \textbf{LeetCode Contest Rating 1750+} --- Participated in 56+ contests; ranked globally within top 1300 in Weekly Contest 376.
+        \item \textbf{600+ Problems Solved} across LeetCode, GeeksforGeeks, and HackerRank with focus on algorithms, data structures, and system design.
+        \item \textbf{HackerRank 6-Star} in Problem Solving demonstrating strong proficiency in competitive programming and algorithmic thinking.
+    \end{itemize}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATIONS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{CERTIFICATIONS}
+    \vspace{-0.3em}
+    \begin{multicols}{3}
+        \begin{itemize}
+            \itemsep -2pt
+            \item \href{https://www.hackerrank.com/certificates/73bb80c83be4}{HackerRank Problem Solving}
+            \item \href{https://www.freecodecamp.org/certification/Roshan_kumar7989/responsive-web-design}{Responsive Web Design}
+            \item \href{https://tree-nation.com/certificate/6525e97fbca2d}{Hacktoberfest Contributor}
+        \end{itemize}
+    \end{multicols}
+\end{rSection}
+
+\end{document}

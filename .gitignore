@@ -12,6 +12,10 @@
 *.bbl
 *.blg
 
+# Build & PDF directories (contains generated files)
+build/
+# pdf/
+
 # Backup files
 *~
 *.bak
